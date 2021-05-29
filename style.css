@@ -1,0 +1,119 @@
+body {
+  background-color: #206161;
+  /* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100;
+}
+#movie-title {
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  left: 50px;
+  opacity: 0.8;
+}
+.header {
+  /* position: relative; */
+  justify-content: flex-end;
+  display: flex;
+  border-bottom-width: 1px;
+  border-bottom-style: groove;
+}
+#search-box {
+  border-radius: 15px;
+  margin: 5px;
+  width: 200px;
+  font-size: large;
+  outline: none;
+}
+#search-btn {
+  margin: 10px;
+  margin-right: 20px;
+  font-size: 2rem;
+  min-width: 20px;
+  color: #0cbaba;
+}
+#search-btn:hover {
+  color: aquamarine;
+}
+
+#movie-container {
+  display: flex;
+  width: 100;
+  position: absolute;
+  flex-wrap: wrap;
+}
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-width: 2px;
+  color: whitesmoke;
+  position: absolute;
+}
+
+.movie-card {
+  position: relative;
+  color: black;
+  margin: 10px;
+  /* display: flexbox; */
+  height: 390px;
+  width: 225px;
+  background-color: cadetblue;
+  border-style: solid;
+  border-color: rgb(21, 151, 119);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.movie-card img {
+  position: relative;
+  height: 340px;
+  display: block;
+  width: 100%;
+}
+.movie-card .overview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: whitesmoke;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+}
+.movie-card:hover .overview {
+  transform: translateY(10%);
+}
+
+.movie-info h3 {
+  justify-content: left;
+  margin: 0;
+  width: 175px;
+  height: 20px;
+  overflow: hidden;
+  color: whitesmoke;
+}
+.movie-info span {
+  /* position:relative; */
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-top: 2.7px;
+  border-radius: 3px;
+  background-color: teal;
+  width: 30px;
+  display: flex;
+}
+
+.tag.orange {
+  color: orange;
+}
+.tag.red {
+  color: rgb(245, 53, 53);
+}
+.tag.green {
+  color: rgb(160, 214, 78);
+}
